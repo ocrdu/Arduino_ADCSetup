@@ -1,8 +1,8 @@
 #include "ADCSetup.h"
 
 void ADCsetup(unsigned int prescaler, unsigned int cyclesPerSample) {
-  int my_ADC_CTRLB_PRESCALER_DIV;
-  int my_SAMPCTRLREGVal;
+  unsigned int my_ADC_CTRLB_PRESCALER_DIV;
+  unsigned int my_SAMPCTRLREGVal;
   
   if (prescaler == 4) {
     my_ADC_CTRLB_PRESCALER_DIV = ADC_CTRLB_PRESCALER_DIV4;
